@@ -1,0 +1,113 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1.2
+Small: 1.05
+Medium: 1.5
+Paragraph default: 1.8
+Large: 2
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+Main color: #B8A8D3
+Font color: #433657
+
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* 
+***************************************************
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* Why 62.5%
+  NOTE: 10px / 16px = 0.625 means 62.5% 
+  now 1rem = 10px
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  color: #433657;
+  line-height: 1.2;
+  font-weight: 400;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  /* overflow-x: hidden; */
+}
+
+/**************************/
+/* GENERAL REUSABLE COMPONENTS */
+/**************************/
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 4.6rem;
+  text-align: center;
+}
+/*
+
+.container {
+  
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+*/
+
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid red;
+}
+
+
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.heading-padding-top {
+  padding-top: 4.2rem;
+}
