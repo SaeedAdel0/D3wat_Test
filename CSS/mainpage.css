@@ -32,6 +32,7 @@
   }
 
   nav{
+    /* position: -webkit-sticky; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -40,8 +41,9 @@
    
     height: 6.6rem;
     padding: 1 4.8rem;
-    position: relative;
-    
+    position: sticky;
+    z-index: 998;
+    top: 0;
   }
 
   nav ul {
@@ -112,6 +114,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    background-color: white;
   }
   .sidebar li{
     width: 100%;
@@ -200,6 +203,8 @@
     background-color: #b8a8d3;
     border-radius: 10px;
     color: #362b46;
+    width: 90%;
+    height: 90%;
   }
   
   .service-card i {
@@ -296,6 +301,7 @@
 
 .insta-text:link,
 .insta-text:visited {
+  color: #362b46;
   text-decoration: none;
   margin-bottom: 50px;
 }
